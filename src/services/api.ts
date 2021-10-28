@@ -1,5 +1,8 @@
 import axios from 'axios';
+import registrarAxiosMocks from '../config/axiosConfig';
 
-export const api = axios.create({
-  baseURL: 'https://pokeapi.co/api/v2/'
-});
+const api = axios.create();
+
+registrarAxiosMocks(api);
+
+export default api;
