@@ -1,12 +1,12 @@
 import Pokemon from '../../types/Pokemon';
 import styles from './styles.module.scss';
 
-export function PokemonCard({ sprites, name }: Pokemon) {
+export function PokemonCard({ avatarUrl, nome }: Pokemon) {
   return (
     <div className={styles.container}>
-      <img src={sprites.front_default} alt={name} />
+      <img src={avatarUrl} alt={nome} />
       <strong>
-        {name}
+        {nome}
       </strong>
     </div>
   )

@@ -15,9 +15,9 @@ export function App() {
           ? <div className={styles.wrapperPokemon}>
               {pokemons.map(pokemon => (
                 <PokemonCard 
-                  sprites={pokemon.sprites}
-                  name={pokemon.name}
-                  key={pokemon.name}
+                  avatarUrl={pokemon.avatarUrl}
+                  nome={pokemon.nome}
+                  key={pokemon.nome}
                 />
               ))}
           </div>

@@ -1,8 +1,6 @@
 interface Pokemon {
-  name: string;
-  sprites: {
-    front_default: string
-  };
+  nome: string;
+  avatarUrl: string;
 }
 
 export default Pokemon;
